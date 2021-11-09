@@ -1,0 +1,135 @@
+ul {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1 em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 40px;
+  }
+header {
+    color: #7944e6;
+    font-size: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: right;
+
+}
+
+.img {
+    display: flex;
+    height: 300px;
+    width: 500px;
+    justify-self: flex-start;
+}
+
+.topping {
+    display: flex;
+    flex-direction: space-around;
+    margin: 10px;
+    justify-content: row, 
+    
+
+}
+
+a.link {color:#7944e6; text-decoration: none;}
+a.visited {color:#7955e6;}
+a.hover {color:#10fdff;}
+
+body {
+    margin: 0;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    font-family: 'bungee', cursive;
+    src: url('https://fonts.googleapis.com/css2?family=Bungee&display=swap')
+    
+}
+
+/* 3 cards */
+.cards {
+    display : grid;
+    grid-template-columns: repeat(3,grid-auto-columns);
+    justify-content: space-around;
+    
+        }
+
+.card {
+    border: thick solid #7944e6;
+    border-radius: 8px;
+    padding: .5rem;
+    font-size: 40px;
+    color: black;
+    text-align: space-around;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.muted {
+    opacity: 0.5;
+
+}
+
+.flex-container {
+    display: flex;
+    margin: 10px;
+    padding: auto;
+    flex-direction: row-;
+    justify-content: space-around;
+    background-color: #ff00ff;
+    text-align:left;
+
+}
+.truck {
+    height: 300px;
+    width: 400px;
+
+@media screen and (min-width: 768px) {
+
+    header {
+        display: flex;
+        justify-content: stretch,space-around;
+
+    }
+    .img {
+        display: flex;
+        flex-direction: flex-start;
+
+    }
+   .cards {
+        display : grid;
+        grid-template-columns: repeat(3,grid-auto-columns);
+        }
+    .card-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .picture {
+        height: 300px;
+        width: 400px;
+    }
+    
+    section {
+        padding-left: 10%;
+        padding-right: 10%;
+            }
+   .flex-container {
+       flex-direction: row; }
+
+   .truck {
+       display: flex;
+       flex-direction:flex-start;
+       height: 300px;
+       width: 400px;
+
+   }    
+
+}
