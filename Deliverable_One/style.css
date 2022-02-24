@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap"); {}
+
+::before ::after {
+    font-family: 'Bungee';
+}
+
+* {
+    margin: 0;
+    font-family: 'bungee', cursive;
+}
+
+/* header section */
+.header__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align:right;
+    padding: 14px 0px;
+}
+
+.logo {
+    width: 200px;
+    max-height: 300px;
+}
+
+.topbar__container {
+    color: #7944e6;
+    font-size: 40px;
+}
+
+a.each-one:link {
+  color: #7944e6;
+  text-decoration: none;
+  padding: 16px;
+  align-items: flex-end;
+}
+
+a.each-one:visited {
+    color: #7955e6;
+}
+
+a.each-one:hover {
+    color: #10fdff;
+    transition-duration: 0.3s;
+}
+
+/* about section */
+.about__container {
+    font-family: 'bungee', cursive;
+    display: flex;
+    flex-direction: column;
+    background-color: #ff00ff;
+    padding: 30px 40px;
+}
+
+.about__container .truckImage {
+ width: 50%;
+ height: auto;
+ margin: 0 auto;
+ padding: 30px 40px;
+ align-items: center;
+}
+
+/* cards container */
+.cards__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem;
+    font-size: 40px;
+    color: black;
+    text-align: space-around;
+}
+
+.cards__container .cardImage {
+    height: 300px;
+    width: 400px;
+    padding: 16px;
+}
+
+.cards__container .card__coffee,  
+.cards__container .card__cream,  
+.cards__container .card__cookies {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    align-items: center;
+    text-align: center;
+    font-size: 32px;
+    border: 5px solid #7944e6;
+    border-radius: 8px;
+    width: 50%;
+    margin: 15px 0;
+}
+.cards__container .view-menu:link {
+    color: #7944e6;
+    text-decoration: none;
+    padding: 16px;
+    align-items: flex-end;
+  }
+  
+.cards__container .view-menu:visited {
+      color: #7955e6;
+  }
+  
+.cards__container .view-menu:hover {
+      color: #10fdff;
+      transition-duration: 0.3s;
+  }
+
+/* footer section */
+.muted {
+    opacity: 0.5;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+    .about__container {
+        font-family: 'bungee', cursive;
+        display: flex;
+        flex-direction: row;
+        background-color: #ff00ff;
+        padding: 30px 40px;
+    }
+    
+    .about__container .truckImage {
+     width: 25%;
+     height: auto;
+     margin: 0 auto;
+     padding: 30px 40px;
+     align-items: center;
+    }
+    .cards__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: .5rem;
+        font-size: 40px;
+        color: black;
+        text-align: space-around;
+    }
+    .cards__container .card__coffee,  
+    .cards__container .card__cream,  
+    .cards__container .card__cookies {
+    margin: 20px;
+}
+}
